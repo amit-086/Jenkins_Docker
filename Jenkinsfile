@@ -5,7 +5,7 @@ pipeline {
           stage('Git-Checkout') {
              steps {
                 echo 'checking out from git-repo';
-                git branch: 'main', url: 'https://github.com/amit-086/Webapp.git'
+                git branch: 'main', url: 'https://github.com/amit-086/Jenkins_Docker.git'
              }
           }
          stage('Build Image') {
