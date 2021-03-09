@@ -1,5 +1,5 @@
 pipeline {
-    agent {dockerfile true}
+    agent Ubuntu_amit {dockerfile true}
 
       stages {
           stage('Git-Checkout') {
