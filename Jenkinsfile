@@ -18,7 +18,7 @@ pipeline {
         stage('Run') {
             steps {
                 sh """
-                  sudo docker run --rm sample_image CheckPrimeNumber.sh $num
+                  sudo docker run --rm sample_image
                   """
             }
         }
