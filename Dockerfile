@@ -6,4 +6,4 @@ RUN ls
 WORKDIR /passingVariable
 RUN chmod +x CheckPrimeNumber.sh
 RUN echo "$message"
-CMD ["passingVariable/CheckPrimeNumber.sh","number"]
+CMD ./CheckPrimeNumber.sh $num
