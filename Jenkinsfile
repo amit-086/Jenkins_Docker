@@ -11,14 +11,14 @@ pipeline {
          stage('Build Image') {
             steps {
                 sh """
-                  sudo docker build -t sample_image .
+                  docker build -t sample_image .
                   """
             }
          }
         stage('Run') {
             steps {
                 sh """
-                  sudo docker run --rm sample_image
+                  docker run --rm sample_image
                   """
             }
         }
