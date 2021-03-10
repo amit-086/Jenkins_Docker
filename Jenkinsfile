@@ -1,5 +1,5 @@
 pipeline {
-    agent Ubuntu_amit
+    agent {label 'Ubuntu_amit'}
 
       stages {
           stage('Git-Checkout') {
